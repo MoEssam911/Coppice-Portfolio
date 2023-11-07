@@ -149,4 +149,5 @@ const contactForm = document.getElementById('contact-form');
             console.error('Email sending failed:', error);
             alert('Email sending failed. Please try again later.');
         });
+        contactForm.reset()
     });
