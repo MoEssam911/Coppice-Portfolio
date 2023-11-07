@@ -1,0 +1,10 @@
+@font-face {
+  font-family: rubik;
+  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+*{
+  font-family: rubik !important;
+}
+.list-active {
+  transform: translateX(-12px);
+}
