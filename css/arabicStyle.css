@@ -2,9 +2,11 @@
   font-family: rubik;
   src: url(../fonts/Rubik-VariableFont_wght.ttf);
 }
-*{
+
+* {
   font-family: rubik !important;
 }
+
 .list-active {
   transform: translateX(-12px);
 }
@@ -27,7 +29,6 @@ body {
 }
 
 /* Start Components */
-
 .main-p {
   color: rgb(126, 125, 125);
   font-size: 16px;
@@ -98,7 +99,6 @@ body {
 .main-btn:hover a {
   color: var(--main-color);
 }
-/* End Components */
 
 /* start navbar */
 .navbar {
@@ -203,7 +203,6 @@ body {
 .navbar .navbar-toggler[aria-expanded="true"] {
   border-color: var(--main-color);
 }
-/* end navbar */
 
 /* start landing */
 .landing {
@@ -358,7 +357,6 @@ section:nth-of-type(2) {
     opacity: 1;
     font-size: 18px;
   }
-  
 }
 .projects-carousel img {
   height: 340px;
@@ -426,7 +424,7 @@ section:nth-of-type(6) {
   border: #1e4b67 1px solid;
   /* border-radius: 16px; */
 }
-.pb-16px{
+.pb-16px {
   padding-bottom: 12px;
 }
 .contact-image-overlay {
@@ -518,11 +516,6 @@ footer {
   height: 300px;
 }
 
-/* .box h4,
-.main-color {
-  color: var(--main-color) ;
-} */
-
 /* mail and phone */
 .abs-contect {
   position: fixed;
@@ -540,7 +533,7 @@ footer {
   width: 100%;
   height: 30px;
   margin-block: 10px;
-  border-radius:  8px 0 0 8px ;
+  border-radius: 8px 0 0 8px;
   margin-right: -80px;
   transition: 0.5s;
   background-color: transparent;
@@ -560,4 +553,82 @@ footer {
 
 .abs-contect svg {
   color: #1e4b67 !important;
+}
+
+/* Animation */
+.startAni {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: white;
+  bottom: 0px;
+  left: 0px;
+  animation-name: startAni;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  z-index: 9999;
+}
+
+@keyframes startAni {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  100% {
+    bottom: 5000px;
+    left: 0;
+  }
+}
+
+.boxAni {
+  color: aqua;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  background: url(../images/Coppice-Logo.png) no-repeat 100%/100%;
+  margin-top: 20%;
+  margin-right: 50%;
+  opacity: 0;
+  transform: translate(100px);
+  animation-name: boxAni;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes boxAni {
+  0% {
+    margin-left: 0%;
+    transform: translate(0);
+    opacity: 0;
+  }
+  100% {
+    margin-left: 50%;
+    transform: translate(100px);
+    opacity: 100%;
+  }
+}
+
+main {
+  display: block;
+  animation-name: Main;
+  animation-duration: 0.2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes Main {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }

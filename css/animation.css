@@ -13,6 +13,7 @@
   animation-iteration-count: 1;
   z-index: 9999;
 }
+
 @keyframes startAni {
   0% {
     bottom: 0;
@@ -23,6 +24,7 @@
     left: 0;
   }
 }
+
 .boxAni {
   color: aqua;
   text-align: center;
@@ -42,6 +44,7 @@
   animation-direction: normal;
   animation-iteration-count: 1;
 }
+
 @keyframes boxAni {
   0% {
     margin-left: 0%;
@@ -54,6 +57,7 @@
     opacity: 100%;
   }
 }
+
 main {
   display: block;
   animation-name: Main;
@@ -61,6 +65,7 @@ main {
   animation-delay: 2s;
   animation-iteration-count: 1;
 }
+
 @keyframes Main {
   0% {
     visibility: hidden;

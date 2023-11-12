@@ -31,7 +31,8 @@
   <body>
     <!-- <div class="startAni">
       <div
-        class="boxAni d-flex justify-content-center align-items-center"></div>
+        class="boxAni d-flex justify-content-center align-items-center"
+      ></div>
     </div> -->
     <main class="overflow-hidden">
       <header id="Home" class="position-relative">
@@ -123,24 +124,24 @@
               </a>
             </div>
             <div class="email-contact d-flex justify-content-between px-3">
-              <a href="mailto:mid9653@gmail.com">
+              <a href="#contact">
                 <span class="text-dark ms-1 me-3">Email</span>
               </a>
-              <a href="mailto:mid9653@gamil.com">
+              <a href="#contact">
                 <i class="fa-regular fa-envelope"></i>
               </a>
             </div>
           </div>
           <div
-            class=" d-flex flex-column justify-content-center align-items-center position-relative"
+            class="d-flex flex-column justify-content-center align-items-center position-relative"
           >
             <div class="text-center heading">
               <p
                 class="main-heading text-white mb-4 text-sm w-100 text-capitalize text"
               >
-              THE FUTURE OF
+                THE FUTURE OF
               </p>
-              <h1 class="text-white"> ARCHITECTURE DESIGNS</h1>
+              <h1 class="text-white">ARCHITECTURE DESIGNS</h1>
               <button class="main-btn mt-4">
                 <a class="text-decoration-none" href="#service"
                   >View Projects</a
@@ -161,7 +162,12 @@
               Who We Are
             </h2>
             <p class="lead">
-              WE<span class="ser-title fw-bolder"> - COPPICE DESIGN -</span> is a dynamic interior and exterior design firm dedicated to creating stunning and functional spaces that inspire and uplift. Our mission is to bring together aesthetics, functionality, and sustainability to craft innovative designs that reflect the unique personalities and needs of our clients.
+              WE<span class="ser-title fw-bolder"> - COPPICE DESIGN -</span> is
+              a dynamic interior and exterior design firm dedicated to creating
+              stunning and functional spaces that inspire and uplift. Our
+              mission is to bring together aesthetics, functionality, and
+              sustainability to craft innovative designs that reflect the unique
+              personalities and needs of our clients.
             </p>
             <p class="lead">
               Our used materials are counted as the most natural resisting ones
@@ -185,7 +191,11 @@
               <!-- planning -->
               <div class="px-2 col-lg-4 col-md-6">
                 <div class="ser-card text-center p-3 shadow-lg">
-                  <img src="/images/urban-planning.png" alt="Planing" width="70" />
+                  <img
+                    src="/images/urban-planning.png"
+                    alt="Planing"
+                    width="70"
+                  />
                   <h2 class="ser-title">Planing</h2>
                   <p class="lead text-body my-3">
                     Our master plans provide a comprehensive look at where an
@@ -334,7 +344,7 @@
                     </div>
                   </div>
                 </div>
-                <h4 class="card-name p-3">WPC "Fances&Doors"</h4>
+                <h4 class="card-name p-3">WPC Fances&Doors</h4>
               </div>
             </div>
             <!-- 3 -->
@@ -750,20 +760,22 @@
             <li class="ms-4 overlay-list" data-project1="">Roof Jacuzzi</li>
           </ul>
         </div>
-        <div class="projects-list2 col-lg-4 d-lg-none d-block d-flex align-items-center">
-          <ul class="list-unstyled d-flex align-items-center pt-3 mx-auto w-100 justify-content-around">
-            <li
-              class="ms-4 overlay-list2 list-active"
-              data-project1="1"
-            >
+        <div
+          class="projects-list2 col-lg-4 d-lg-none d-block d-flex align-items-center"
+        >
+          <ul
+            class="list-unstyled d-flex align-items-center pt-3 mx-auto w-100 justify-content-around"
+          >
+            <li class="ms-4 overlay-list2 list-active" data-project1="1">
               Decking
             </li>
             <hr />
-            <li class="ms-4 overlay-list2" data-project2="hi2">
-              Jacuzzi
-            </li>
+            <li class="ms-4 overlay-list2" data-project2="hi2">Jacuzzi</li>
             <hr />
-            <li class="ms-4 overlay-list2" data-project3="/images/Sec2-img3.jpg">
+            <li
+              class="ms-4 overlay-list2"
+              data-project3="/images/Sec2-img3.jpg"
+            >
               Steel Outdoor
             </li>
             <hr />
@@ -871,6 +883,7 @@
           </div>
         </div>
       </section>
+
       <!-- Clients -->
       <section class="pt-5" id="clients">
         <div class="">
@@ -915,22 +928,30 @@
           </div>
         </div>
       </section>
+
       <!-- Contact Us -->
-      <section class="py-5" id="clients">
+      <section class="py-5" id="contact">
         <div class="position-relative">
-          <div class="contact-image-overlay mt-5"></div> 
+          <!-- popup -->
+          <!-- <div class="pop-up alert-success text-center p-3 w-100">
+            <p class="text-success">Your Email has been sent successfully ! </p>
+          </div> -->
+
+          <div class="contact-image-overlay mt-5"></div>
           <div class="container contact">
             <h4 class="main-heading py-3 text-light">CONTACT US</h4>
-            <div
-              class="row justify-content-between mx-auto gap-3"
-            >
-              <form class="form-group col-md-5 col-12 p-4 form-filter" id="contact-form">
+            <div class="row justify-content-between mx-auto gap-3">
+              <form
+                class="form-group col-md-5 col-12 p-4 form-filter"
+                id="contact-form"
+              >
                 <div class="form-floating mb-3">
                   <input
                     type="text"
                     class="form-control"
                     id="name"
                     placeholder=""
+                    required
                   />
                   <label for="floatingInput">Full Name</label>
                 </div>
@@ -940,6 +961,7 @@
                     class="form-control"
                     id="email"
                     placeholder=""
+                    required
                   />
                   <label for="floatingInput">Email address</label>
                 </div>
@@ -949,19 +971,19 @@
                     class="form-control"
                     id="floatingPassword"
                     placeholder=""
+                    required
                   />
                   <label for="floatingPassword">Mobile Number</label>
                 </div>
                 <div class="mb-3">
-                  <label
-                    for="exampleFormControlTextarea1"
-                    class="form-label"
+                  <label for="exampleFormControlTextarea1" class="form-label"
                     >Your Message</label
                   >
                   <textarea
                     class="form-control"
                     id="message"
                     rows="4"
+                    required
                   ></textarea>
                 </div>
                 <button class="btn btn-primary w-50 mx-auto d-block">
@@ -982,15 +1004,22 @@
             </div>
           </div>
         </div>
+        <div class="pop-up alert alert-success text-center" role="alert">
+          Your Email has been sent successfully!
+        </div>
       </section>
-      <footer class="row" id="contact">
+      <footer class="row">
         <div class="row justify-content-between col-10 mx-auto mt-6">
           <div
             class="col-xl-6 col-lg-6 col-md-12 text-center text-lg-start mt-md-2 mt-lg-0"
           >
             <img src="/images/logowhite.svg" alt="logo" width="120" class="" />
             <p class="mt-5 foot-des">
-              COPPICE DESIGN is a dynamic interior and exterior design firm dedicated to creating stunning and functional spaces that inspire and uplift. Our mission is to bring together aesthetics, functionality, and sustainability to craft innovative designs that reflect the unique personalities and needs of our clients.
+              COPPICE DESIGN is a dynamic interior and exterior design firm
+              dedicated to creating stunning and functional spaces that inspire
+              and uplift. Our mission is to bring together aesthetics,
+              functionality, and sustainability to craft innovative designs that
+              reflect the unique personalities and needs of our clients.
             </p>
           </div>
           <div
@@ -1006,18 +1035,24 @@
           <div
             class="social-icon pb-3 col-12 text-center mt-3 mt-lg-0 text-lg-end"
           >
-          <a href="https://www.behance.net/coppicedesigncd" target="_blank">
-            <i class="fa-brands fa-behance"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/coppicedesign/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://instagram.com/coppicedesign?r=nametag" target="_blank">
-            <i class="fa-brands fa-instagram mx-3"></i>
-          </a>
-          <a href="https://www.facebook.com/coppicedesign/" target="_blank">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
+            <a href="https://www.behance.net/coppicedesigncd" target="_blank">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/coppicedesign/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://instagram.com/coppicedesign?r=nametag"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/coppicedesign/" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
           </div>
         </div>
       </footer>

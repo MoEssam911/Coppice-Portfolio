@@ -16,7 +16,6 @@ body {
 }
 
 /* Start Components */
-
 .main-p {
   color: rgb(126, 125, 125);
   font-size: 16px;
@@ -87,7 +86,6 @@ body {
 .main-btn:hover a {
   color: var(--main-color);
 }
-/* End Components */
 
 /* start navbar */
 .navbar {
@@ -280,6 +278,11 @@ section:nth-of-type(2) {
   text-align: center;
   background-color: #1e4b6790;
   color: white;
+  transition: 0.3s;
+}
+
+.box:hover .card-name {
+  background-color: var(--main-color);
 }
 
 /* Projects */
@@ -350,14 +353,11 @@ section:nth-of-type(2) {
     opacity: 1;
     font-size: 18px;
   }
-  
 }
 .projects-carousel img {
   height: 340px;
 }
-.bg-car img{
-  /* height: 100%; */
-}
+
 .our-projects::after {
   content: "";
   position: absolute;
@@ -421,9 +421,21 @@ section:nth-of-type(6) {
   border: #1e4b67 1px solid;
   /* border-radius: 16px; */
 }
-.pb-16px{
+
+.pop-up {
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.active-alert {
+  opacity: 1;
+  transform: translateX(0);
+}
+.pb-16px {
   padding-bottom: 12px;
 }
+
 .contact-image-overlay {
   position: absolute;
   min-height: 350px;
@@ -435,23 +447,28 @@ section:nth-of-type(6) {
   background-blend-mode: multiply;
   z-index: 20;
 }
+
 .contact {
   padding-top: 120px;
   position: relative;
   z-index: 25;
 }
+
 .form-filter {
   backdrop-filter: blur(20px);
   box-shadow: 1px 1px 15px 0px black;
 }
+
 iframe {
   /* border-radius: 16px; */
   height: 100%;
 }
+
 .map {
   box-shadow: 1px 1px 15px 0px black;
   padding: 0;
 }
+
 /* Footer */
 footer {
   min-height: 300px;
@@ -512,11 +529,6 @@ footer {
 .carousel-fade .carousel-item img {
   height: 300px;
 }
-
-/* .box h4,
-.main-color {
-  color: var(--main-color) ;
-} */
 
 /* mail and phone */
 .abs-contect {

@@ -1,20 +1,13 @@
-// Page dosen't show untill animation done
-// let main = document.getElementsByTagName("main")[0];
-// main.style.display = "none";
-// setTimeout(() => {
-//   main.style.display = "block";
-// }, 2490);
-
 // navbar change
 let navLinks = document.querySelectorAll(".nav-item a");
-Array.from(navLinks).forEach(link => {
+Array.from(navLinks).forEach((link) => {
   link.addEventListener("click", (e) => {
-      e.preventDefault();
-      navLinks.forEach(link => link.classList.remove("active"));
-      link.classList.add("active");
-      const targetId = link.getAttribute("href").substring(1);
-      const targetSection = document.getElementById(targetId);
-      targetSection.scrollIntoView({ behavior: "smooth" });
+    e.preventDefault();
+    navLinks.forEach((link) => link.classList.remove("active"));
+    link.classList.add("active");
+    const targetId = link.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({ behavior: "smooth" });
   });
 });
 
@@ -58,24 +51,23 @@ iconContainer.addEventListener("click", () => {
   }
 });
 
-//
-let li2 = document.getElementsByClassName('overlay-list');
-let car = document.getElementById('carouselExampleAutoplaying2');
+// Projects list function
+let li2 = document.getElementsByClassName("overlay-list");
+let car = document.getElementById("carouselExampleAutoplaying2");
+
 car.addEventListener("slid.bs.carousel", function (e) {
-  li2[e.from].classList.remove('list-active')
-  li2[e.to].classList.add('list-active')
+  li2[e.from].classList.remove("list-active");
+  li2[e.to].classList.add("list-active");
 });
 
-let li2m = document.getElementsByClassName('overlay-list2');
-// let car = document.getElementById('carouselExampleAutoplaying2');
+let li2m = document.getElementsByClassName("overlay-list2");
 car.addEventListener("slid.bs.carousel", function (e) {
-  li2m[e.from].classList.remove('list-active')
-  li2m[e.to].classList.add('list-active')
+  li2m[e.from].classList.remove("list-active");
+  li2m[e.to].classList.add("list-active");
 });
-
 
 // Get a reference to the carousel element
-var allCarsouel = document.querySelectorAll('.carousel-fade');
+var allCarsouel = document.querySelectorAll(".carousel-fade");
 var targetCarsouel;
 var intervalId; // Variable to store the interval ID
 var isHovered = false; // Flag to track hover state
@@ -95,59 +87,63 @@ function stopAutoPlay() {
 
 // Function to move to the next slide
 function nextSlide(targetCarsouel) {
-  var activeSlide = targetCarsouel.querySelector('.carousel-item.active');
-  var nextSlide= activeSlide.nextElementSibling;
+  var activeSlide = targetCarsouel.querySelector(".carousel-item.active");
+  var nextSlide = activeSlide.nextElementSibling;
   if (activeSlide.nextElementSibling) {
-    nextSlide = activeSlide.nextElementSibling
+    nextSlide = activeSlide.nextElementSibling;
   } else {
-    nextSlide = targetCarsouel.querySelectorAll('.carousel-item')[0];
+    nextSlide = targetCarsouel.querySelectorAll(".carousel-item")[0];
   }
-  activeSlide.classList.remove('active');
-  nextSlide.classList.add('active');
+  activeSlide.classList.remove("active");
+  nextSlide.classList.add("active");
 }
 
 Array.from(allCarsouel).forEach(function (targetCarsouel) {
-  targetCarsouel.addEventListener('mouseenter', function () {
+  targetCarsouel.addEventListener("mouseenter", function () {
     isHovered = true;
     startAutoPlay(targetCarsouel);
   });
-  targetCarsouel.addEventListener('mouseleave', function () {
+  targetCarsouel.addEventListener("mouseleave", function () {
     isHovered = false;
     stopAutoPlay();
-  
   });
 });
 
-// /////////////////////////////////////////////
-
 // Initialize Email.js with your user_id
-emailjs.init("rcUE8ssWv7yqudzWR");
-emailjs.send()
+emailjs.init("wGqEI7qgulEBUVWVK");
+emailjs.send();
 
-const contactForm = document.getElementById('contact-form');
+const contactForm = document.getElementById("contact-form");
+const popUp = document.querySelector(".pop-up");
 
-    contactForm.addEventListener('submit', function (event) {
-        event.preventDefault();
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-        const name = document.getElementById('name').value; 
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        const phone = document.getElementById('phone')
+  // const name = document.getElementById("name").value;
+  // const email = document.getElementById("email").value;
+  // const message = document.getElementById("message").value;
+  // const phone = document.getElementById("phone");
 
-        // Send the email using Email.js
-        emailjs.send("service_e6badp2", "template_gg8itj5", {
-            to_email: "mohameddessam303@gmail.com",
-            from_name: name,
-            from_email: email,
-            from_phone: phone,
-            message: message
-        })
-        .then(function(response) {
-            console.log('Email sent successfully:', response);
-            alert('Email sent successfully!');
-        }, function(error) {
-            console.error('Email sending failed:', error);
-            alert('Email sending failed. Please try again later.');
-        });
-        contactForm.reset()
-    });
+  // // Send the email using Email.js
+  // emailjs
+  //   .send("service_1c2q8sz", "template_c6gwzcp", {
+  //     to_email: "Coppicedesigneg@gmail.com",
+  //     from_name: name,
+  //     from_email: email,
+  //     from_phone: phone,
+  //     message: message,
+  //   })
+  //   .then(
+  //     function (response) {},
+  //     function (error) {
+  //       console.error("Email sending failed:", error);
+  //     }
+  //   );
+
+  contactForm.reset();
+
+  popUp.classList.add("active-alert");
+  setTimeout(() => {
+    popUp.classList.remove("active-alert");
+  }, 3000);
+});
