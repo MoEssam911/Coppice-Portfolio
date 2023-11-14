@@ -325,7 +325,6 @@ section:nth-of-type(2) {
     height: 340px;
     z-index: 100;
     top: calc(50% - 110px);
-    /* right: 100px; */
     left: 50vw;
     transform: translate(-50%);
     margin: 0 auto;
@@ -337,14 +336,12 @@ section:nth-of-type(2) {
     left: 50vw;
     transform: translate(-50%);
     width: 80%;
-    /* height: 340px; */
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     z-index: 50;
     border-radius: 20px;
-    /* transform: scale(1); */
     color: white;
     font-size: 12px;
   }
