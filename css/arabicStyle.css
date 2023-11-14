@@ -342,13 +342,16 @@ section:nth-of-type(2) {
     top: calc(50% - 110px);
     margin: 0 auto;
     box-shadow: 0px 0px 30px 2px black;
+    /* transform: translate(10%); */
+    right: 50vw;
+    transform: translate(50%);
   }
 
   .projects-list2 {
     position: absolute;
     top: 50px;
-    left: 50vw;
-    transform: translate(-50%);
+    right: 50vw;
+    transform: translate(50%);
     width: 80%;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
