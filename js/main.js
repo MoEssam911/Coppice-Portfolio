@@ -109,7 +109,7 @@ Array.from(allCarsouel).forEach(function (targetCarsouel) {
   });
 });
 
-// Initialize Email.js with your user_id
+// Initialize Email.js with user public Id
 emailjs.init("wGqEI7qgulEBUVWVK");
 emailjs.send();
 
@@ -119,26 +119,26 @@ const popUp = document.querySelector(".pop-up");
 contactForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  // const name = document.getElementById("name").value;
-  // const email = document.getElementById("email").value;
-  // const message = document.getElementById("message").value;
-  // const phone = document.getElementById("phone");
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  const phone = document.getElementById("phone");
 
-  // // Send the email using Email.js
-  // emailjs
-  //   .send("service_1c2q8sz", "template_c6gwzcp", {
-  //     to_email: "Coppicedesigneg@gmail.com",
-  //     from_name: name,
-  //     from_email: email,
-  //     from_phone: phone,
-  //     message: message,
-  //   })
-  //   .then(
-  //     function (response) {},
-  //     function (error) {
-  //       console.error("Email sending failed:", error);
-  //     }
-  //   );
+  // Send the email using Email.js
+  emailjs
+    .send("service_1c2q8sz", "template_c6gwzcp", {
+      to_email: "Coppicedesigneg@gmail.com",
+      from_name: name,
+      from_email: email,
+      from_phone: phone,
+      message: message,
+    })
+    .then(
+      function (response) {},
+      function (error) {
+        console.error("Email sending failed:", error);
+      }
+    );
 
   contactForm.reset();
 
