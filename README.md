@@ -37,7 +37,7 @@ We'd love to hear from you! If you have any inquiries, partnership opportunities
 
 - **Email**: [contact@coppicedesign.com](mailto:info@coppicedesign.com)
 - **Phone**: [+1 (123) 456-7890](tel:0109 1191931)
-- **Website**: [www.coppicedesign.com]()
+- **Website**: [www.coppicedesign.com](http://coppicedesign.com/)
 - **LinkedIn**: [Coppice Design on LinkedIn](https://www.linkedin.com/company/coppicedesign/)
 - **Instagram**: [Coppice Design on Instagram](https://instagram.com/coppicedesign?r=nametag)
 
